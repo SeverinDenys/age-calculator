@@ -1,0 +1,177 @@
+:root {
+  --main-color: hsl(259, 100%, 65%);
+  --error-color: hsl(0, 100%, 67%)
+  --main-white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey:hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+
+  font-size: 62.5%;
+  font-family: Poppins;
+}
+
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ 
+body {
+  background-color: var(--light-grey);
+}
+
+#container {
+  background-color: white; /* why it doesn't allow to use var main-white but allow to use all else */
+  width: 95%;
+  margin: 7rem auto 0;
+  padding: 3rem;
+  border: 1px solid blue;
+  border-radius: 5% 5% 30% 5%;
+}
+
+/* media for container */
+@media (min-width: 1000px) {
+  #container {
+    margin: 15rem auto;
+  
+    border-color: red; /* Adjusted border-color property */
+    max-width: 90rem;
+    border-radius: 3% 3% 20% 3%;
+  }
+}
+
+label {
+font-size: 1.5rem;
+color: var(--smokey-grey);
+font-weight: 600;
+letter-spacing: 3px;
+}
+
+/* media for label */
+@media (min-width:1000px) {
+  label {
+  font-size: 2rem;
+  }
+}
+
+input[type="number"] { 
+width: 9rem;
+padding: 1rem 2rem 1rem 1rem;
+font-weight: 900;
+outline-color: var(--main-color);
+font-size: 2rem;
+}
+
+/* media for input and   */
+@media (min-width: 1000px) {
+  input[type="number"] {
+    width: 17rem;
+    height: 8rem;
+    padding: 1.5rem 2rem 1rem 1rem;
+    outline-color: var(--main-color);
+    font-size: 4rem;
+    margin-right: 2rem;
+  } 
+   
+  input::placeholder {
+  font-size: 3rem;
+  }
+}
+
+ 
+ 
+
+#form {
+  display: flex;
+  justify-content: center;
+  border: 1px solid pink
+}
+
+/* media for form */
+@media (min-width: 1000px) {
+  #form {
+    display: flex;
+    justify-content: flex-start;
+   
+  }
+}
+
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 2rem; /* Adjust spacing between columns */
+   
+}
+
+ 
+.form-column {
+  display: flex;
+  flex-direction: column;
+   
+}
+ 
+/* SVG part */
+
+ 
+
+.svg-container {
+  text-align: center;
+  border: 1px solid red;
+  margin: 3rem 0 2rem 0;
+ }
+
+ /* media for svg-container */
+ @media (min-width: 1000px) {
+  .svg-container {
+  text-align: end;
+  }
+}
+
+svg {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  padding: 1.5rem; /* why instead of changing the padding outside it decreases the arrow symbol*/
+  cursor: pointer;
+}
+
+/* media for svg */
+@media (min-width: 1000px) {
+  svg {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/* to do after-create a line both sides from svg button */
+/* svg::after {
+  content: " ";
+
+} */
+
+/* results */
+
+#resultInDay, #resultInMonth, #resultInYears {
+font-size: 5rem;
+font-weight: bold;
+ 
+}
+
+.numResult {
+color: var(--main-color)
+}
+
+/* media for results */
+@media (min-width: 1000px) {
+  #resultInDay, #resultInMonth, #resultInYears {
+    font-size: 8rem;
+    font-weight: bold;
+     
+    }
+}

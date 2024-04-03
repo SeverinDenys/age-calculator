@@ -158,12 +158,12 @@ svg {
 /* results */
 
 #resultInDay, #resultInMonth, #resultInYears {
-font-size: 5rem;
+font-size: 4rem;
 font-weight: bold;
  
 }
 
-.numResult {
+.numResultInDays, .numResultInMonth, .numResultInYear {
 color: var(--main-color)
 }
 

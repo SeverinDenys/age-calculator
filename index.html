@@ -20,33 +20,35 @@
         <form action="">
           <div class="form-row">
             <div class="form-column">
-              <label for="dayNumber">DAY</label>
-              <input type="number" id="dayNumber" name="dayNumber"
-              placeholder="DD"   required="required"/>
+              <label for="day">DAY</label>
+              <input type="number" id="day" name="dayNumber" placeholder="DD" required="required"/>
             </div>
             <div class="form-column">
-              <label for="monthNumber">MONTH</label>
-              <input type="number" id="monthNumber"name="monthNumber" placeholder="MM"   required="required"/>
+              <label for="month">MONTH</label>
+              <input type="number" id="month" name="monthNumber" placeholder="MM" required="required"/>
             </div>
             <div class="form-column">
-              <label for="yearNumber">YEAR</label>
-              <input type="number" id="yearNumber" name="yearNumber" placeholder="YYYY"   required="required"/>
+              <label for="year">YEAR</label>
+              <input type="number" id="year" name="yearNumber" placeholder="YYYY" required="required"/>
             </div>
           </div>
         </form>
       </div>
+      <button type="button" onclick="getAge()">Submit</button>
+      
      
-     
-    <div class="svg-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" id="svg-button"/></g></svg>
-    </div>
+    <!-- <div class="svg-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" class="svg-button" type="button" onclick="getAge()"/></g></svg>
+    </div> -->
+    
     <div id="results"> 
-      <div id="resultInYears"><span class="numResult">- -</span> <span>years</span></div>
-      <div id="resultInMonth"><span class="numResult">- -</span> <span>months</span></div>
-      <div id="resultInDay"><span class="numResult">- -</span> <span>days</span></div>
+      <div id="resultInYears"><span class="numResultInYear">- -</span> <span>years</span></div>
+      <div id="resultInMonth"><span class="numResultInMonth">- -</span> <span>months</span></div>
+      <div id="resultInDay"><span class="numResultInDays">- -</span> <span>days</span></div>
     </div>
   </div>
   <div id="result"></div>
+  
   </div>
     <script src="script.js"></script>
   </body>

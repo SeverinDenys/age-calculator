@@ -29,7 +29,6 @@ body {
   width: 95%;
   margin: 7rem auto 0;
   padding: 3rem;
-  border: 1px solid blue;
   border-radius: 5% 5% 30% 5%;
 }
 
@@ -37,8 +36,6 @@ body {
 @media (min-width: 1000px) {
   #container {
     margin: 15rem auto;
-  
-    border-color: red; /* Adjusted border-color property */
     max-width: 90rem;
     border-radius: 3% 3% 20% 3%;
   }
@@ -88,7 +85,6 @@ font-size: 2rem;
 #form {
   display: flex;
   justify-content: center;
-  border: 1px solid pink
 }
 
 /* media for form */
@@ -121,7 +117,6 @@ font-size: 2rem;
 
 .svg-container {
   text-align: center;
-  border: 1px solid red;
   margin: 3rem 0 2rem 0;
  }
 
